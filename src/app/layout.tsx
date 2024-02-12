@@ -1,12 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({
+  subsets: ['devanagari'],
+  weight: '400',
+});
 
 export const metadata: Metadata = {
-  title: "eShuri",
-  description: "elearning platform",
+  title: 'eShuri',
+  description: 'e-Learning platform',
 };
 
 export default function RootLayout({
@@ -15,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>{children}</body>
     </html>
   );

@@ -1,0 +1,15 @@
+.label {
+  @apply block mb-2 font-medium  text-title;
+}
+
+.input {
+  @apply border border-inputBorder text-title text-sm rounded-lg   block w-full p-3;
+}
+
+.input::placeholder {
+  @apply font-medium text-title;
+}
+
+.input:focus {
+  @apply outline-inputBorder outline-0;
+}
