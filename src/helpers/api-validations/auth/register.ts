@@ -6,6 +6,7 @@ const registerSchema = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().regex(new RegExp(PASSWORD_REGEX)).required(),
   image: Joi.string(),
+  role: Joi.string(),
 });
 
 export default registerSchema;
